@@ -2,17 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { BookOpenIcon, Bars3Icon } from "@heroicons/react/24/solid";
 import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
-export const rightAnswer = () =>
-  toast("🦄 Wow so easy!", {
-    position: "top-right",
-    autoClose: 500,
+export const rightAnswer = (answer) =>
+  toast.success(answer, {
+    position: "top-center",
+    autoClose: 700,
     hideProgressBar: false,
     closeOnClick: true,
     pauseOnHover: true,
     draggable: true,
-    progress: 1,
-    theme: "dark",
+    progress: undefined,
+    theme: "light",
   });
 const Navbar = () => {
   
@@ -64,7 +65,8 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <ToastContainer />
+        <ToastContainer
+        />
       </div>
     );
 };

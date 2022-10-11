@@ -13,7 +13,7 @@ const QuizDetails = ({quiz}) => {
           <div className="card-body">
             <div className="flex justify-between">
               <p className="text-black font-semibold text-xl">{questionMain}</p>
-              <button onClick={rightAnswer}>
+              <button onClick={() => rightAnswer(correctAnswer)}>
                 <EyeIcon className="h-6 w-6 flex mr-3 text-sky-800"></EyeIcon>
               </button>
             </div>
