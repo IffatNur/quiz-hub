@@ -19,13 +19,13 @@ const Home = () => {
               <br />
               Explore more to know about Quiz Hub.
             </p>
-            <button className=" flex text-white font-bold border-0 px-4 py-2 rounded-lg bg-sky-600">
-              Explore More
+            <button className=" flex text-white font-bold border-0 px-4 py-2 rounded-lg bg-sky-600 mx-auto my-4">
+              <a href="#topics">Explore More</a>
               <ArrowRightIcon className="h-6 w-6 flex mr-3" />
             </button>
           </div>
         </div>
-        <div className="grid gap-4 lg:grid-cols-2 mx-auto mt-5 w-4/6 ">
+        <div id='topics' className="grid gap-4 lg:grid-cols-2 mx-auto mt-5 w-4/6 ">
           {topics.map((topic) => (
             <Topics key={topic.id} topic={topic}></Topics>
           ))}
