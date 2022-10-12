@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Project details: 
+
+Project name: Quiz Hub
+live site: [https://legendary-bubblegum-2e9e69.netlify.app/]
+
+Main features: 
+1) 3 routes
+2) Check right/wrong answer through a toast
+3) Shows right answer through a toast
+4) Shows total marks on quiz
+5) COntains Topicwise dynamic routes
+6) Statistic route shows a chart of total
+7) Blog route contains Q/A 
+
+
