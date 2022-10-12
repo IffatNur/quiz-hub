@@ -42,7 +42,7 @@ const Navbar = () => {
     return (
       <div>
         <div className="navbar bg-gradient-to-r from-cyan-500 to-blue-500  text-white w-full mx-auto">
-          <div className="flex-1">
+          <div className="md:flex-1">
             <h2 className="font-bold text-4xl flex lg:ml-32">
               <BookOpenIcon className="h-11 w-10 text-yellow-400 flex mr-3" />
               Quiz Hub
@@ -64,12 +64,12 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className="visible lg:invisible collapse">
-            <input type="checkbox" className="peer" />
+          <div className="visible lg:invisible collapse ">
+            <input type="checkbox" className="peer " />
             <div className="collapse-title text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-              <Bars3Icon className="h-11 w-10 text-yellow-400 flex mr-3" />
+              <Bars3Icon className="h-11 w-10 text-yellow-400 flex" />
             </div>
-            <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
+            <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content ">
               <ul className="menu menu-vertical p-0 font-bold text-xl ">
                 <li>
                   <Link to="/">Home</Link>
