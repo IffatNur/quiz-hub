@@ -11,21 +11,24 @@ const Home = () => {
     return (
       <div className="bg-amber-100">
         <div className="main-container w-2/4 flex items-center justify-center ">
-          <div className="text-center text-stone-600">
+          <div className="text-center p-4 bg-white bg-opacity-50">
             <p className="text-3xl">Welcome To,</p>
             <h1 className="text-7xl font-extrabold text-amber-500">QUIZ HUB</h1>
-            <p>
+            <p className="text-xl font-semibold ">
               Test your knowledge by participating on quiz test of Quiz Hub!{" "}
               <br />
               Explore more to know about Quiz Hub.
             </p>
-            <button className=" flex text-white font-bold border-0 px-4 py-2 rounded-lg bg-sky-600 mx-auto my-4">
-              <a href="#topics">Explore More</a>
+            <button className=" flex text-white font-bold border-0 px-4 py-2 rounded-lg bg-sky-600 mx-auto my-4 hover:bg-black">
+              <a href="#topics">Show Topics </a>
               <ArrowRightIcon className="h-6 w-6 flex mr-3" />
             </button>
           </div>
         </div>
-        <div id='topics' className="grid gap-4 lg:grid-cols-2 mx-auto mt-5 w-4/6 ">
+        <div
+          id="topics"
+          className="grid gap-4 lg:grid-cols-2 mx-auto mt-5 w-4/6 "
+        >
           {topics.map((topic) => (
             <Topics key={topic.id} topic={topic}></Topics>
           ))}
