@@ -34,7 +34,7 @@ const QuizDetails = ({ quiz, setTotal, total}) => {
                 <label className="label cursor-pointer border-2 border-sky-800">
                   <input
                     type="radio"
-                    name="radio-6"
+                    name={question}
                     className="radio"
                     onClick={() => checkAnswer(option, correctAnswer)}
                   />

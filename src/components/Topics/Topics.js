@@ -13,15 +13,15 @@ const Topics = ({topic}) => {
           <figure>
             <img className="bg-black w-full h-full" src={logo} alt="Album" />
           </figure>
-          <div className="card-body">
+          <div className="card-body w-3/4">
             <h2 className="card-title text-3xl font-bold">{name}</h2>
-            <p>Click the button to participate the quiz on {name}.</p>
+            <p>Total question: {total}</p>
             <div className="card-actions justify-end">
               <button
                 onClick={handler}
                 className="btn bg-sky-600 border-0 px-8"
               >
-                Explore
+                View Quiz
               </button>
             </div>
           </div>
