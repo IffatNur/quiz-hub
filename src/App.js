@@ -5,6 +5,7 @@ import Main from "./layout/Main";
 import Navbar from "./components/Navbar/Navbar";
 import Quiz from "./components/Quiz/Quiz";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
+import Blog from "./components/Blog/Blog";
 
 function App() {
   const router = createBrowserRouter([
@@ -28,6 +29,10 @@ function App() {
             );
           },
           element: <Quiz></Quiz>
+        },
+        {
+          path: '/blog',
+          element: <Blog></Blog>
         }
       ],
     },
